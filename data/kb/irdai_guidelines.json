@@ -1,0 +1,30 @@
+[
+  {
+    "id": "IRDAI-001",
+    "title": "30-Day Claim Settlement Rule",
+    "category": "Regulatory Guidelines",
+    "clause": "IRDAI Circular Ref 01",
+    "content": "As per IRDAI (Protection of Policyholders' Interests) Regulations, insurers must settle or reject a health/life/motor claim within 30 days from the date of receipt of all necessary documents. If an insurer delays payment beyond 30 days without justification, it is liable to pay interest on the claim amount at a rate 2% above the prevailing bank rate."
+  },
+  {
+    "id": "IRDAI-002",
+    "title": "15-Day Free-Look Period",
+    "category": "Regulatory Guidelines",
+    "clause": "IRDAI Circular Ref 02",
+    "content": "Every new life and health insurance policy owner has a mandatory free-look period of 15 days (30 days if purchased through distance marketing / online) from the date of receipt of policy document to review the terms. If dissatisfied, the policyholder can return the policy for cancellation, and the insurer will refund the premium after deducting proportionate risk premium and medical examination expenses."
+  },
+  {
+    "id": "IRDAI-003",
+    "title": "Insurance Ombudsman Grievance Redressal",
+    "category": "Regulatory Guidelines",
+    "clause": "IRDAI Grievance Rules",
+    "content": "If a complaint is rejected by the insurer or no response is received within 15 days of lodging a grievance with the insurer's Grievance Redressal Officer (GRO), the policyholder can escalate the dispute to the Insurance Ombudsman. The Ombudsman provides an independent, cost-free resolution mechanism for claims up to INR 50 lakhs."
+  },
+  {
+    "id": "IRDAI-004",
+    "title": "Health Insurance Portability Rules",
+    "category": "Regulatory Guidelines",
+    "clause": "IRDAI Portability Norms",
+    "content": "Policyholders have the right to port their health insurance policy from one insurer to another without losing credit gained for pre-existing disease waiting periods and No Claim Bonus accrued. Portability applications must be submitted at least 45 days prior to the policy renewal date."
+  }
+]

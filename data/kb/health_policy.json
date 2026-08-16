@@ -1,0 +1,44 @@
+[
+  {
+    "id": "HEALTH-001",
+    "title": "Inpatient Hospitalization Coverage",
+    "category": "Health Insurance",
+    "clause": "Clause 1.1",
+    "content": "The insurer covers reasonable and customary medical expenses incurred for inpatient hospitalization due to illness or accidental bodily injury contracted or sustained during the policy period. Hospitalization must be for a minimum period of 24 consecutive hours. Covered expenses include room rent, boarding, nursing care, ICU charges, surgeon fees, anesthetist fees, and diagnostic procedures directly related to the treatment."
+  },
+  {
+    "id": "HEALTH-002",
+    "title": "Pre-Existing Diseases (PED) Waiting Period",
+    "category": "Health Insurance",
+    "clause": "Clause 2.4",
+    "content": "Pre-existing diseases (PED) are defined as any condition, ailment, or injury for which medical advice or treatment was recommended or received by a physician within 48 months prior to the policy inception date. Expenses related to the treatment of a Pre-Existing Disease will be excluded from coverage until 36 months of continuous coverage have elapsed from the initial policy start date."
+  },
+  {
+    "id": "HEALTH-003",
+    "title": "Day Care Procedures",
+    "category": "Health Insurance",
+    "clause": "Clause 1.3",
+    "content": "Medical treatments and surgical procedures that require less than 24 hours of hospitalization due to technological advancements in medical science are covered under Day Care Procedures. Examples include cataract surgery, hemodialysis, radiotherapy, chemotherapy, tonsillectomy, and coronary angiography. Outpatient department (OPD) consultation expenses are not covered under day care."
+  },
+  {
+    "id": "HEALTH-004",
+    "title": "Room Rent Sub-limits & Co-payment",
+    "category": "Health Insurance",
+    "clause": "Clause 3.2",
+    "content": "Normal hospital room rent is capped at 1% of the Total Sum Insured per day, and ICU charges are capped at 2% of the Total Sum Insured per day. If the insured occupies a room with a higher rent category than eligible, a proportionate deduction will apply to all associate medical expenses. Insured individuals aged 65 years and above are subject to a mandatory 15% co-payment on total claimable expenses."
+  },
+  {
+    "id": "HEALTH-005",
+    "title": "Specific Exclusions & Non-Covered Items",
+    "category": "Health Insurance",
+    "clause": "Clause 4.1",
+    "content": "The policy excludes coverage for cosmetic or plastic surgery (unless required due to accident), weight loss procedures, gender reassignment, routine eye exams, hearing aids, dental treatment (unless requiring hospitalization), self-inflicted injuries, substance abuse rehabilitation, and treatment arising from war or nuclear contamination."
+  },
+  {
+    "id": "HEALTH-006",
+    "title": "Health Claim Filing Procedure",
+    "category": "Health Insurance",
+    "clause": "Clause 5.1",
+    "content": "Cashless Claims: Intimate the Third-Party Administrator (TPA) at least 48 hours prior to planned admission or within 24 hours of emergency admission. Pre-authorization form must be submitted at the network hospital desk. Reimbursement Claims: Submit written notice within 7 days of discharge, along with original hospital bills, payment receipts, discharge summary, diagnostic reports, and completed claim form to the insurer."
+  }
+]

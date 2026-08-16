@@ -1,0 +1,37 @@
+[
+  {
+    "id": "LIFE-001",
+    "title": "Term Life Death Benefit Payout",
+    "category": "Life & Term Insurance",
+    "clause": "Clause 1.1 - Benefit Structure",
+    "content": "Upon the untimely death of the Life Assured during the policy term, provided the policy is in full force, the insurer will pay the Sum Assured on Death to the designated nominee or legal heir. The death benefit can be disbursed as a lump-sum payment or structured monthly income, based on the payout option chosen at inception."
+  },
+  {
+    "id": "LIFE-002",
+    "title": "Grace Period & Policy Lapse",
+    "category": "Life & Term Insurance",
+    "clause": "Clause 2.3",
+    "content": "A grace period of 30 days is allowed for annual, half-yearly, and quarterly premium payment modes (15 days for monthly mode) from the due date. During the grace period, insurance cover remains active. If premium is unpaid at the expiry of the grace period, the policy lapses and all benefits cease."
+  },
+  {
+    "id": "LIFE-003",
+    "title": "Critical Illness Rider",
+    "category": "Life & Term Insurance",
+    "clause": "Rider Add-on 02",
+    "content": "If opted, pays a lump-sum benefit equal to the Critical Illness Rider Sum Assured upon first diagnosis of any specified critical illness (e.g., Cancer of specified severity, First Heart Attack, Stroke, Open Chest CABG, Kidney Failure requiring dialysis). A survival period of 14 days post-diagnosis is required before claim payout."
+  },
+  {
+    "id": "LIFE-004",
+    "title": "Suicide Exclusion Clause",
+    "category": "Life & Term Insurance",
+    "clause": "Exclusion 3.1",
+    "content": "In case of death due to suicide within 12 months from the date of inception of policy or date of revival, the nominee or beneficiary shall be entitled to receive at least 80% of total premiums paid till date of death or surrender value (whichever is higher), provided policy is in force."
+  },
+  {
+    "id": "LIFE-005",
+    "title": "Life Claim Settlement Process",
+    "category": "Life & Term Insurance",
+    "clause": "Clause 5.2 - Claim Documents",
+    "content": "Nominee must notify insurer in writing along with: 1. Original Policy Document. 2. Death Certificate issued by municipal authority. 3. Completed Claim Form. 4. Nominee's identity & address proof with cancelled cheque. 5. Medical attendant certificate and hospital discharge summary (if death occurred due to illness)."
+  }
+]

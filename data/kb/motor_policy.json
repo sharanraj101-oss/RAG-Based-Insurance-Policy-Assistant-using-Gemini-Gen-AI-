@@ -1,0 +1,44 @@
+[
+  {
+    "id": "MOTOR-001",
+    "title": "Own Damage (OD) & Comprehensive Coverage",
+    "category": "Motor Insurance",
+    "clause": "Section I - Clause 1",
+    "content": "The insurer indemnifies the policyholder against loss or damage to the insured vehicle caused by accidental external means, fire, explosion, lightning, self-ignition, burglary, housebreaking, theft, riot, strike, earthquake, flood, cyclone, or transit by road, rail, or waterway. Claims are settled based on the Insured Declared Value (IDV) minus depreciation according to vehicle age."
+  },
+  {
+    "id": "MOTOR-002",
+    "title": "Third-Party Liability Coverage",
+    "category": "Motor Insurance",
+    "clause": "Section II - Clause 1",
+    "content": "Mandatory coverage under the Motor Vehicles Act. Covers legal liability incurred by the policyholder for bodily injury, permanent disability, or death of third parties, as well as third-party property damage up to a statutory limit of INR 7,50,000 arising out of the use of the insured vehicle."
+  },
+  {
+    "id": "MOTOR-003",
+    "title": "Zero Depreciation Rider (Add-on Cover)",
+    "category": "Motor Insurance",
+    "clause": "Add-on Rider 01",
+    "content": "When Zero Depreciation add-on is opted, the insurer pays the full replacement cost for damaged vehicle parts during accidental repairs without deducting standard depreciation rates (e.g., 50% for rubber/plastic, 30% for fiberglass, 10-50% for metal). Applicable up to a maximum of 2 claim claims per policy year."
+  },
+  {
+    "id": "MOTOR-004",
+    "title": "No Claim Bonus (NCB) Structure",
+    "category": "Motor Insurance",
+    "clause": "Section III - Clause 4",
+    "content": "No Claim Bonus is a discount on the Own Damage premium awarded for every claim-free year: 20% after 1 year, 25% after 2 consecutive years, 35% after 3 years, 45% after 4 years, and a maximum of 50% after 5 claim-free years. NCB belongs to the policyholder and can be transferred to a newly purchased vehicle."
+  },
+  {
+    "id": "MOTOR-005",
+    "title": "Motor Insurance Exclusions",
+    "category": "Motor Insurance",
+    "clause": "General Exclusions",
+    "content": "No liability accepted if the vehicle is driven by a person without a valid driving license, under the influence of intoxicating liquor or drugs, used for commercial speed testing/racing, driven outside geographical boundaries of India, or for general mechanical/electrical breakdowns and consequential losses."
+  },
+  {
+    "id": "MOTOR-006",
+    "title": "Motor Accident Claim Process",
+    "category": "Motor Insurance",
+    "clause": "Section IV - Claim Steps",
+    "content": "In case of accident or theft: 1. Immediately intimate the insurer helpline within 24 hours. 2. File an FIR at the nearest police station in cases of third-party injury, major accident, or vehicle theft. 3. Do not move or repair the vehicle before surveyor inspection. 4. Submit claim form, copy of RC, driving license, FIR, and repair estimates."
+  }
+]
