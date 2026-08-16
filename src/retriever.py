@@ -22,6 +22,7 @@ class PolicyRetrieverManager:
         self.bm25 = None
         self.chunks: List[Document] = []
         self.tokenized_corpus = []
+        self.doc_id_to_idx: Dict[int, int] = {}
 
     def build_index(self, force_rebuild: bool = False):
         """
@@ -29,6 +30,7 @@ class PolicyRetrieverManager:
         """
         raw_docs = load_policy_documents()
         self.chunks = create_document_chunks(raw_docs)
+        self.doc_id_to_idx = {id(doc): i for i, doc in enumerate(self.chunks)}
         
         corpus_texts = [doc.page_content for doc in self.chunks]
         
@@ -76,12 +78,14 @@ class PolicyRetrieverManager:
         
         # Reciprocal Rank Fusion formula: 1 / (rank + 60)
         for rank, (doc, score) in enumerate(dense_results):
-            idx = self.chunks.index(doc)
-            rrf_scores[idx] = rrf_scores.get(idx, 0.0) + (DENSE_WEIGHT / (rank + 60))
+            idx = self.doc_id_to_idx.get(id(doc))
+            if idx is not None:
+                rrf_scores[idx] = rrf_scores.get(idx, 0.0) + (DENSE_WEIGHT / (rank + 60))
             
         for rank, (doc, score) in enumerate(sparse_results):
-            idx = self.chunks.index(doc)
-            rrf_scores[idx] = rrf_scores.get(idx, 0.0) + (SPARSE_WEIGHT / (rank + 60))
+            idx = self.doc_id_to_idx.get(id(doc))
+            if idx is not None:
+                rrf_scores[idx] = rrf_scores.get(idx, 0.0) + (SPARSE_WEIGHT / (rank + 60))
             
         sorted_indices = sorted(rrf_scores.keys(), key=lambda i: rrf_scores[i], reverse=True)
         return [self.chunks[idx] for idx in sorted_indices[:top_k]]

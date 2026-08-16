@@ -47,8 +47,11 @@ def load_policy_documents(data_dir: Path = DATA_DIR) -> List[Document]:
 def create_document_chunks(documents: List[Document], chunk_size: int = CHUNK_SIZE, chunk_overlap: int = CHUNK_OVERLAP) -> List[Document]:
     """
     Splits policy documents into retrievable units preserving clause context.
+    Ensures robust non-blocking forward sliding window.
     """
     chunks = []
+    min_step = max(1, chunk_size - chunk_overlap)
+    
     for doc in documents:
         text = doc.page_content
         if len(text) <= chunk_size:
@@ -57,19 +60,26 @@ def create_document_chunks(documents: List[Document], chunk_size: int = CHUNK_SI
             
         start = 0
         while start < len(text):
-            end = start + chunk_size
+            end = min(start + chunk_size, len(text))
             if end < len(text):
-                # Look for natural boundaries like newline or period
-                break_point = text.rfind("\n", start, end)
-                if break_point == -1 or break_point <= start:
-                    break_point = text.rfind(". ", start, end)
-                if break_point > start:
+                search_start = start + max(10, chunk_overlap)
+                break_point = text.rfind("\n", search_start, end)
+                if break_point == -1:
+                    break_point = text.rfind(". ", search_start, end)
+                if break_point > search_start:
                     end = break_point + 1
                     
             chunk_text = text[start:end].strip()
             if chunk_text:
                 chunks.append(Document(page_content=chunk_text, metadata=doc.metadata.copy()))
-            start = end - chunk_overlap if end < len(text) else len(text)
+            
+            if end >= len(text):
+                break
+                
+            next_start = max(start + min_step, end - chunk_overlap)
+            if next_start <= start:
+                next_start = start + min_step
+            start = next_start
             
     print(f"Created {len(chunks)} retrievable text chunks.")
     return chunks

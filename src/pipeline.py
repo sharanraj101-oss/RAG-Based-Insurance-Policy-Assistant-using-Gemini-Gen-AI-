@@ -189,4 +189,4 @@ if __name__ == "__main__":
     res = pipeline.run_query("What is the waiting period for pre-existing disease?", retrieval_mode="hybrid_rerank")
     print("\n--- Pipeline Execution Output ---")
     print(f"Latency: {res['latency_seconds']}s | Groundedness: {res['groundedness_score']}")
-    print(f"Answer:\n{res['answer']}")
+    print(f"Answer:\n{res['answer']}".encode('ascii', errors='ignore').decode('ascii'))
